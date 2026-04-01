@@ -33,7 +33,7 @@ export default function Home() {
     <main className="min-h-screen bg-black p-4 md:p-8 font-mono text-slate-300">
       <div className="max-w-[1400px] mx-auto border border-slate-800/60 p-6 md:p-10 rounded-sm bg-[#02040a] shadow-2xl relative">
         
-        {/* Header Otimizado */}
+        {/* Header */}
         <header className="flex flex-col lg:flex-row justify-between items-start lg:items-center mb-12 border-b border-slate-800 pb-8 gap-6">
           <div>
             <h1 className="text-2xl font-black text-white tracking-tighter italic">
@@ -61,7 +61,6 @@ export default function Home() {
           </div>
         </header>
 
-        {/* Espaçamento corrigido na Grid */}
         <div className="min-h-[65vh]">
           <VirtuosoGrid
             data={filteredAssets}
@@ -87,7 +86,6 @@ export default function Home() {
           </div>
         )}
 
-        {/* Notificação de Risco Persistente */}
         {hasBreach && (
           <div className="fixed bottom-8 left-1/2 -translate-x-1/2 z-50 w-[90%] max-w-4xl p-4 bg-red-600/10 border border-red-500 backdrop-blur-xl shadow-[0_0_30px_rgba(239,68,68,0.2)]">
             <div className="flex items-center justify-center gap-4 text-red-500 text-[11px] font-black uppercase tracking-[0.4em]">

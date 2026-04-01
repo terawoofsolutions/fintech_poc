@@ -9,7 +9,6 @@ export const useCryptoSocket = () => {
 
     socket.onmessage = (event) => {
       const data = JSON.parse(event.data);
-      // 'data' agora é um Array [{symbol, price, drift}, ...]
       setAssets(data);
     };
 

@@ -21,7 +21,6 @@ export function Card({ asset, isBreached }: CardProps) {
         ? "border-red-500 bg-red-950/10 shadow-[0_0_15px_rgba(239,68,68,0.2)]" 
         : "border-slate-800 bg-slate-900/50 hover:border-slate-600"
     }`}>
-      {/* Label de Ativo */}
       <div className="flex justify-between items-start mb-4">
         <div>
           <p className="text-[10px] text-slate-500 uppercase tracking-widest">Asset Pair</p>
@@ -33,8 +32,6 @@ export function Card({ asset, isBreached }: CardProps) {
           {isBreached ? "CRITICAL" : "STABLE"}
         </div>
       </div>
-
-      {/* Dados Principais */}
       <div className="grid grid-cols-2 gap-4 mb-4">
         <div>
           <p className="text-[9px] text-slate-500 uppercase">Spot Price (USD)</p>
@@ -49,8 +46,6 @@ export function Card({ asset, isBreached }: CardProps) {
           </p>
         </div>
       </div>
-
-      {/* Sparkline - Visualização de Tendência */}
       <div className="h-12 w-full opacity-50">
         <ResponsiveContainer width="100%" height="100%">
           <LineChart data={chartData}>
@@ -66,8 +61,6 @@ export function Card({ asset, isBreached }: CardProps) {
           </LineChart>
         </ResponsiveContainer>
       </div>
-
-      {/* Decorador de Scanline */}
       <div className="absolute inset-0 pointer-events-none bg-[linear-gradient(rgba(18,16,16,0)_50%,rgba(0,0,0,0.1)_50%),linear-gradient(90deg,rgba(255,0,0,0.02),rgba(0,255,0,0.02),rgba(0,0,255,0.02))] bg-[length:100%_2px,3px_100%]"></div>
     </div>
   );
