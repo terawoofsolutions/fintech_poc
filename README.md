@@ -1,4 +1,4 @@
-SCRYPT // Asset Integrity Monitor
+Fintech PoC - Asset Integrity Monitor
 A high-frequency financial surveillance dashboard built to monitor digital asset volatility and market integrity in real-time. This project demonstrates a robust full-stack architecture capable of handling intensive data throughput with low-latency visualization.
 
 ##Key Features
